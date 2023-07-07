@@ -6,8 +6,14 @@ function Login() {
     <>
       <div className="">
         <form>
-          <label for="fname">EMAIL ADDRESS</label>
+        <div className="form-field">
+            <label for="fname">EMAIL ADDRESS</label>
+            <br/>
           <input type="text" id="fname" name="fname" />
+        </div>
+          
+          <br/>
+
           <label for="lname">PASSWORD</label>
           <input type="text" id="lname" name="lname" />
           <br/>
