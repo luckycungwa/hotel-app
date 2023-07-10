@@ -1,32 +1,111 @@
+/* MAIN APP LAYOUT */
 .App {
-  text-align: center;
+  width: 100vw;
+
+  display: grid;
+  grid:
+    "header" auto
+    "main" 1fr
+    "footer" auto
+    / 1fr;
+  gap: 0px;
+}
+
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
 }
 
 /* COLOUR MANEGEMNT CSS */
-
-
 .dark-bg {
-  background-color: #0E0607;
-  color: #F4F2F6;
+  background-color: #0e0607;
+  color: #f4f2f6;
 }
 
 .light-bg {
-  background-color: #F4F2F6;
-  color: #0E0607 ;
+  background-color: #f4f2f6;
+  color: #0e0607;
 }
 
 .primary {
-  background: #F9841A ;
+  background: #f9841a;
 }
 
 .secondary {
-  background-color: #FEA346;
+  background-color: #fea346;
 }
 
 .tertiary {
-  background-color: #BC5E29;
+  background-color: #bc5e29;
 }
 
 .white {
-  color: #F6F6F6;
+  color: #f6f6f6;
+}
+
+/* CARD CLASSES */
+.card {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  display: flex;
+}
+
+.card-info {
+  text-align: center;
+  position: absolute;
+}
+
+.text-1 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.text-2 {
+  margin-top: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+ 
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.left {
+  float: left;
+  left: 0;
+}
+.right {
+  float: right;
+  right: 0;
+}
+
+/* glass style */
+.glass {
+  background: #efefef26;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid #efefef13;
 }

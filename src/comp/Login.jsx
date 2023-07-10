@@ -36,6 +36,7 @@ function Login() {
 
   return (
     <>
+<<<<<<< HEAD
       <div className="main">
         <form className="form">
         <div className="form-field">
@@ -71,6 +72,45 @@ function Login() {
           <br/>
           <button className="btn primary">LOGIN</button>
         </form>
+=======
+      <div className="form-section glass">
+        {/* <div className="">
+          <img className="card-img" src="./login.jpg" alt="signup" />
+        </div> */}
+        <div className="form-field">
+          <div class="form-field">
+            <label class="" for="textinput">
+              Username
+            </label>
+            <br />
+            <div className="">
+              <input type="text" placeholder="Username" />
+            </div>
+          </div>
+          <br />
+          <div class="form-field">
+            <label class="" for="textinput">
+              Password
+            </label>
+            <br />
+            <div className="">
+              <input type="password" placeholder="password" />
+            </div>
+          </div>
+          <br />
+
+          <div>
+            <button className="btn cta primary">LOGIN</button>
+          </div>
+        </div>
+        <div className="image card-img">
+          <img className="card-img" src="./login.jpg" alt="signup" />
+          <div className="card-info">
+            <p className="text-1">LOG IN</p>
+            <p className="text-1">WELCOME TO OUR HOTEL</p>
+          </div>
+        </div>
+>>>>>>> 96fbf2ac45b0fe64dbde3d1bda85080ceab6afb7
       </div>
     </>
   );
