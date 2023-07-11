@@ -1,23 +1,10 @@
-/* MAIN APP LAYOUT */
-.App {
-  width: 100vw;
-
-  display: grid;
-  grid:
-    "header" auto
-    "main" 1fr
-    "footer" auto
-    / 1fr;
-  gap: 0px;
-}
-
 .header {
   grid-area: header;
 }
 
 .main {
   grid-area: main;
-  
+
   align-items: center;
   align-content: center;
   display: absolute;
@@ -41,7 +28,7 @@
 }
 
 .primary {
-  background: #f9841a;
+  background: #3c89ab;
 }
 
 .secondary {
@@ -53,7 +40,10 @@
 }
 
 .white {
-  color: #f6f6f6;
+  color: #ede4d7;
+}
+.black {
+  color: #1c1c1c;
 }
 
 .image {
@@ -62,6 +52,16 @@
   display: block;
   position: relative;
   text-align: center;
+}
+
+/* Image overlay */
+.overlay {
+  position: absolute;
+  transition: 0.4s ease;
+  height: 100vh;
+  width: auto;
+  background: linear-gradient(to top, #f0f0f000, #12121270);
+  inset: 0; /* cover the whole image */
 }
 
 .left {
@@ -78,29 +78,64 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   display: block;
   flex-wrap: wrap;
 }
 
 .title {
-  margin-top: 1rem;
-  font-weight: 900;
+  margin: 0;
+  font-weight: 600;
   text-transform: uppercase;
+}
+
+.title-2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 .title-display {
-  margin-top: 1rem;
-  margin-bottom: 2.5rem;
+  margin-top: .2rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 144px;
-  
+  transition: all .3s;
 }
 
 .img-text {
-  position: absolute;
 }
+
+/* TEXT WRAP CONTENTS */
+.wrap-s {
+  flex-wrap: wrap;
+  width: 20%;
+  height: auto;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap-m {
+  inline-size: 35%;
+  height: auto;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  bottom: 0;
+}
+.wrap-l {
+  flex-wrap: wrap;
+  inline-size: 50%;
+  height: auto;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
 
 ul {
   text-decoration: none;
@@ -108,8 +143,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-
 
 /* BUTTONS */
 .btn {
@@ -160,7 +193,6 @@ ul {
   position: relative;
   display: inline-flex;
   gap: 8px;
-
 }
 
 .icon-s {
@@ -168,7 +200,7 @@ ul {
   position: relative;
   width: 20px;
   height: 20px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .icon-m {
@@ -176,24 +208,36 @@ ul {
   position: relative;
   width: 40px;
   height: 40px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-
 .icon-s:hover {
-  
-  
 }
 
 /* SECTION / LAYOUT DISPLAY ELEMENTS OF THE ITEMS */
 
 .card-section {
-gap:16px;
-display: flex;
-flex-direction: column;
-padding: 32px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
 }
 
 .bottom {
-  
+}
+
+
+/* NVIGATION BAR STUFF */
+.navLinks {
+  margin: 32px 0 0 0;
+  color: #efefef;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  margin: 32px 12PX;
+  font-weight: bold;
+  color: #ffcaf0;
+  cursor: pointer;
+  background-color: #333;
 }

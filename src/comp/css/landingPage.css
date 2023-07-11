@@ -1,17 +1,20 @@
 .corousel {
-    width: 100vw;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-    object-fit: cover;
+  width: 100vw;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
 }
 
 .hero {
-    position: relative;
-    text-align: center;
+  
+}
+
+.hero-text {
+  position: absolute;
+  inset: 0;
 }
 
 .center {
-    top:50%;
-    left:50%;
+    text-align: center;
+    top: 30%;
 }

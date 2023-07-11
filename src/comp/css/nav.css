@@ -1,0 +1,26 @@
+.nav {
+    flex-direction: row;
+    display:inline-flex;
+    font-weight: bold;
+    font-size: 14px;
+   background-color: #f0f8ff00;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 24px;
+    align-items: center;
+    margin: 0px;
+  z-index: 5;
+  
+  }
+
+.transparent {
+    
+    display: none;
+}
+
+.center-div {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
