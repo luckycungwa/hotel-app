@@ -9,6 +9,7 @@ function Home() {
   return (
     <>
       <LandingPage/>
+      
       <div className="center-div center">
         <h1 className="title-2">OUR FACILITIES</h1>
         <p className="description wrap-m ">

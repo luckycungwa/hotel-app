@@ -1,15 +1,16 @@
 /* FORM COMPONENT CSS */
 
 /* INPUTS */
-input[type="text"], [type="password"] {
+input[type="text/email"],
+[type="password"] {
   padding: 8px 16px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid #000000;
-  display: block;
-
-  width: 28vw;
-  height: 6vh;
+  font-size: 1rem;
+  min-width: 28vw;
+  min-height: 6vh;
+  display: inline-flex;
 }
 
 input:hover {
@@ -24,15 +25,32 @@ input:hover {
 /* FORM LABELS */
 .form-section {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   flex-wrap: wrap;
 
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .form-field {
   flex-direction: column;
   margin: 8px 0;
+  position: relative;
   /*  */
+}
+
+.form-card {
+  padding: 32px;
+  border: 8px solid #262626;
+  width: 28%;
+  height: 40%;
+
+}
+
+.form-img {
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  text-align: center;
 }

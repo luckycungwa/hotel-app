@@ -4,32 +4,26 @@ import "./css/facility.css";
 import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+// Imports for user authentication | FIREBASE
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase";
 
-function Login() {
+function Signin() {
   //const [userInput, setUserInput] = useState("");
-  const [userName, setUserName] = useState(""); //change defaulkts to match info from the database/
+  const [userEmail, setUserEmail] = useState(""); //change defaulkts to match info from the database/
   const [userPass, setUserPass] = useState(""); //change defaulkts to match info from the database/authentication etc.
 
-  //Prevent user from submiting an empty form
-  const ForceInput = (e) => {
-    if (!userName) {
-      alert("Fill in the form!"); // Alert the user if they did not filll in the task
-      return;
-    }
-  };
-
   //user registeration & authentication
-  const handleLogin = () => {
-    ForceInput();
-
+  const Register = () => {
     const authUser = getAuth();
-
-    signInWithEmailAndPassword(authUser, userName, userPass)
+    createUserWithEmailAndPassword(
+      authUser, //user authentication as the first object
+      
+      userEmail,
+      userPass
+    )
       .then(() => {
-        alert("Login successful!");
+        alert("Registred successfully!");
       })
       .catch((error) => {
         console.log(error);
@@ -37,11 +31,20 @@ function Login() {
       });
   };
 
+  const handleRegister = () => {
+    if (!userEmail) {
+      alert("Fill in form!"); // Alert the user if they did not filll in the task
+      return;
+    } else {
+      Register();
+    }
+  };
+
   return (
     <>
       <div className="form-section form-card glass">
         <div>
-          <h2 className="title-3">LOGIN</h2>
+          <h2 className="title-3">REGISTER</h2>
         </div>
         <div className="">
           <div className="">
@@ -54,11 +57,11 @@ function Login() {
                 <input
                   autoFocus
                   className=""
-                  placeholder="username or email"
+                  placeholder="email"
                   type="text/email"
                   autoComplete="on"
-                  value={userName}
-                  onChange={(e) => setUserName(e.target.value)}
+                  value={userEmail}
+                  onChange={(e) => setUserEmail(e.target.value)}
                   // force user to fill force
                   required
                 />
@@ -81,21 +84,17 @@ function Login() {
                   //Disable handler until we complete Firebase Lessons
                   onChange={(e) => setUserPass(e.target.value)}
                 />
-                <NavLink to="/" className="card-footer left">
-                  forgot password
-                </NavLink>
-                <br />
+               
               </div>
             </div>
             <br />
-            <br />
-            <br />
+
             <div className="icon-area">
-              <button className="btn cta primary" onClick={handleLogin}>
+              <button className="btn cta primary" onClick={handleRegister}>REGISTER</button>
+
+              <button className="btn cta primary right">
                 LOGIN
               </button>
-
-              <button className="btn cta primary right">REGISTER</button>
               <br></br>
             </div>
             <br />
@@ -106,4 +105,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signin;

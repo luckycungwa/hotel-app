@@ -6,6 +6,8 @@ import Home from "./comp/Home";
 import Login from "./comp/Login";
 import Navbar from "./comp/Navbar";
 import Facilities from "./comp/Facilities";
+import Signin from "./comp/Signin";
+import Card from "./comp/Card";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/Home" component={Home} />
           <Route path="/Facilities" component={Facilities} />
           <Route path="/Login" component={Login} />
+          <Route path="/Register" component={Signin} />
+          <Route path="/Rooms" component={Card} />
         </Switch>
       </Router>
 {/* 

@@ -64,6 +64,14 @@
   inset: 0; /* cover the whole image */
 }
 
+.glass  {
+  background: #ffffff50;
+  box-shadow: 0 4px 30px #0000001a;
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid #ffffff4d;
+}
+
 .left {
   float: left;
   left: 0;
@@ -93,6 +101,15 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.4px;
+}
+
+.title-3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 0;
 }
 
 .title-display {

@@ -4,6 +4,7 @@ import "../App.css";
 // Import other ccard components
 
 function Card() {
+
   return (
     <>
       <div className="card light-bg">
@@ -11,8 +12,10 @@ function Card() {
           <img src="./bedroom.jpg" alt="Room 1" className="image" />
         </div>
         <div className="card-info">
-        <p className="card-footer">R500 /NIGHT</p>
+        <p className="card-footer title">R500 /NIGHT</p>
           <h2 className="title">master suite</h2>
+
+          <br />
           <div className="description">
           <ul>
             <li className="description-list">Parking,</li>
@@ -22,12 +25,10 @@ function Card() {
             <li className="description-list">1 Bedroom,</li>
             <li className="description-list">Wifi</li>
           </ul>
-            
           </div>
+
           <br />
-          <br />
-          <button className="btn bottom">BOOK NOW</button>
-          <br/>
+          <button className="btn cta" onClick="">BOOK NOW</button>
           <br/>
           <br/>
           <div className="icon-area">
@@ -43,47 +44,6 @@ function Card() {
         
       </div>
 
-      <div className="card light-bg">
-        <div className="card-img">
-          <img src="./room1.jpg" alt="Room 1" className="image" />
-        </div>
-        <div className="card-info">
-          <h2 className="title">premium suite</h2>
-          <div className="description">
-          <ul>
-            <li className="description-list">Hello</li>
-            <li className="description-list">Hello</li>
-            <li className="description-list">Hello</li>
-            <li className="description-list">Hello</li>
-          </ul>
-            
-          </div>
-          <br />
-          <br />
-          <button className="btn">BOOK NOW</button>
-        </div>
-      </div>
-
-      <div className="card light-bg">
-        <div className="card-img">
-          <img src="./room0.jpg" alt="Room 1" className="image" />
-        </div>
-        <div className="card-info">
-          <h2 className="title">luxary deluxe</h2>
-          <div className="description">
-          <ul>
-            <li className="description-list">Hello</li>
-            <li className="description-list">Hello</li>
-            <li className="description-list">Hello</li>
-            <li className="description-list">Hello</li>
-          </ul>
-            
-          </div>
-          <br />
-          <br />
-          <button className="btn">BOOK NOW</button>
-        </div>
-      </div>
     </>
   );
 }
