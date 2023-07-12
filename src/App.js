@@ -7,40 +7,21 @@ import Login from "./comp/Login";
 import Navbar from "./comp/Navbar";
 import Facilities from "./comp/Facilities";
 import Signin from "./comp/Signin";
-import Card from "./comp/Card";
+import Rooms from "./comp/Rooms";
 
 function App() {
   return (
     <>
       <Router>
-      <Navbar/>
+        <Navbar />
         <Switch>
           <Route path="/Home" component={Home} />
           <Route path="/Facilities" component={Facilities} />
           <Route path="/Login" component={Login} />
           <Route path="/Register" component={Signin} />
-          <Route path="/Rooms" component={Card} />
+          <Route path="/Rooms" component={Rooms} />
         </Switch>
       </Router>
-{/* 
-      <div className="">
-        
-        <div className=""><div><LandingPage /></div></div>
-
-        
-        <div className="">
-          <div><Login /></div>
-
-          <div className="card-section"><Card/></div>
-          <div><Facility /></div>
-        </div>
-
-        
-        <div className="footer dark-bg">2</div>
-      </div>
-
-       */}
-
     </>
   );
 }

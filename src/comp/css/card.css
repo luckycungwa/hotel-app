@@ -1,8 +1,8 @@
 /* CARD CLASSES */
-.card {
+.room-card {
   position: relative;
-  width: 800px;
-  height: 300px;
+  /* width: 800px;
+  height: 300px; */
   display: flex;
   padding: 12px;
   

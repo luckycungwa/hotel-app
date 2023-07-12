@@ -6,10 +6,10 @@ function Facilities() {
   return (
     <>
       <div className="">
-          <Facility/>
-          <Facility/>
-          <Facility/>
-          <Facility/>
+        <Facility title="Swimming Pool" imgUrl="./02.jpg" />
+        <Facility title="Swimming Pool" imgUrl="./01.jpg" />
+        <Facility title="Swimming Pool" imgUrl="./05.jpg" />
+        <Facility title="Swimming Pool" imgUrl="./04.jpg" />
       </div>
     </>
   );

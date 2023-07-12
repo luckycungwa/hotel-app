@@ -234,10 +234,11 @@ ul {
 /* SECTION / LAYOUT DISPLAY ELEMENTS OF THE ITEMS */
 
 .card-section {
-  gap: 16px;
+  gap: 24px;
   display: flex;
   flex-direction: column;
   padding: 32px;
+  width: 50vw;
 }
 
 .bottom {

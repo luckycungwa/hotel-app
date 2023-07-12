@@ -1,7 +1,7 @@
 /* CARD CLASSES */
 .card {
   position: relative;
-  width: 90vw;
+  width: 80vw;
   height: 800px;
   display: flex;
   /* padding: 12px; */
@@ -43,12 +43,12 @@
   position: absolute;
   display: block;
   width: 400px;
-  height: 14%;
+  height: 12%;
  
 }
 
 .text-heading {
-    font-weight: 700;
+    font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 24px;
