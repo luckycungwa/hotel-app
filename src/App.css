@@ -161,6 +161,10 @@ ul {
   padding: 0;
 }
 
+p {
+  margin: 4px 0;
+}
+
 /* BUTTONS */
 .btn {
   appearance: none;

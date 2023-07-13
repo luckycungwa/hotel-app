@@ -3,7 +3,7 @@ import "./css/card.css";
 import "./css/facility.css";
 import React from "react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useHistory, NavLink } from "react-router-dom";
 
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase";
@@ -12,6 +12,8 @@ function Login() {
   //const [userInput, setUserInput] = useState("");
   const [userName, setUserName] = useState(""); //change defaulkts to match info from the database/
   const [userPass, setUserPass] = useState(""); //change defaulkts to match info from the database/authentication etc.
+
+const navPage = useHistory();
 
   //Prevent user from submiting an empty form
   const ForceInput = (e) => {
@@ -30,10 +32,13 @@ function Login() {
     signInWithEmailAndPassword(authUser, userName, userPass)
       .then(() => {
         alert("Login successful!");
+        //redirect user if their login was successful
+        navPage.push("/Booking");
       })
       .catch((error) => {
         console.log(error);
-        alert("An error occurred. Please try again.");
+        alert("Please Register to make a reservation!");
+
       });
   };
 
@@ -95,7 +100,7 @@ function Login() {
                 LOGIN
               </button>
 
-              <button className="btn cta primary right">REGISTER</button>
+              <button className="btn cta primary right" onClick={() =>navPage.push("/Register")}>REGISTER</button>
               <br></br>
             </div>
             <br />

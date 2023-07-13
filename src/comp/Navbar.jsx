@@ -10,7 +10,7 @@ function Navbar() {
       
           <ul className="icon-area">
             <li>
-              <NavLink to="/Home">About Us</NavLink>
+              <NavLink to="/Home">Home</NavLink>
             </li>
             <li>
               <NavLink to="/Rooms">Rooms</NavLink>

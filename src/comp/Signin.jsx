@@ -3,7 +3,7 @@ import "./css/card.css";
 import "./css/facility.css";
 import React from "react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 // Imports for user authentication | FIREBASE
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase";
@@ -39,8 +39,12 @@ function Signin() {
       Register();
     }
   };
+//page navigator
+ const navPage = useHistory();
 
   return (
+   
+
     <>
       <div className="form-section form-card glass">
         <div>
@@ -92,7 +96,7 @@ function Signin() {
             <div className="icon-area">
               <button className="btn cta primary" onClick={handleRegister}>REGISTER</button>
 
-              <button className="btn cta primary right">
+              <button className="btn cta primary right" onClick={() => navPage.push("/Login")}>
                 LOGIN
               </button>
               <br></br>

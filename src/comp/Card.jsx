@@ -3,7 +3,7 @@ import "./css/card.css";
 import "../App.css";
 // Import other ccard components
 
-const Card = ({ features, price, roomType, imgUrl, buttonName }) => {
+const Card = ({ features, price, roomType, imgUrl, buttonName, onClick  }) => {
   return (
     <>
       <div className="room-card light-bg">
