@@ -23,25 +23,33 @@ const Rooms = () => {
     <>
       <div className="card-section">
         <Card
-          features="Spacious room with ocean view"
-          price="R300 per night"
+          features="Ocean view | king-sized bed | private balcony..."
+          price="R250 per night"
           roomType="Deluxe Suite"
           imgUrl="./room0.jpg"
           buttonName="BOOK NOW"
           onClick={handleBooking}
         />
         <Card
-          features="Spacious room with ocean view"
-          price="R520 per night"
-          roomType="Deluxe Suite"
+          features="Extra-large room with city skyline view | 2 queen-sized beds | work desk..."
+          price="R300 per night"
+          roomType="Deluxe XL"
           imgUrl="./room3.jpg"
           buttonName="BOOK NOW"
           onClick={handleBooking}
         />
         <Card
-          features="Spacious room with ocean view"
+          features="Private beach access, 4-poster bed | fully equipped kitchen..."
           price="R300 per night"
           roomType="Deluxe Suite"
+          imgUrl="./room1.jpg"
+          buttonName="BOOK NOW"
+          onClick={handleBooking}
+        />
+        <Card
+          features="Panoramic ocean views | a plush king-sized bed | jacuzzi bathtub, and butler service..."
+          price="R500 per night"
+          roomType="Luxury Comfort"
           imgUrl="./room1.jpg"
           buttonName="BOOK NOW"
           onClick={handleBooking}

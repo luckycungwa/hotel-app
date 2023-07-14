@@ -54,3 +54,27 @@
   flex-wrap: wrap;
   padding: 4px 4px;
 }
+
+.bookmark {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: auto;
+}
+
+.star {
+  color: #00000040;
+  font-size: 42px;
+}
+.star-filled {
+  color: #00000040;
+  font-size: 42px;
+  color: #ffdb4a;
+}
+.star:hover, star-filled:hover {
+  color: #00000040;
+  font-size: 42px;
+  color: #ffdb4a;
+}

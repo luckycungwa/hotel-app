@@ -23,8 +23,9 @@ const Booking = () => {
         />
         <div>
           <Reservation label="children" />
-          <Reservation label="adult" />
-          <Reservation label="days" />
+          <Reservation label="adults" />
+          <Reservation label="Nights" />
+          <Reservation label="Grand total"/>
         </div>
       </div>
     </>

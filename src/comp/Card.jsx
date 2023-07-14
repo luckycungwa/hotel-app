@@ -1,16 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/card.css";
 import "../App.css";
-// Import other ccard components
+// Imports for ratings
 
-const Card = ({ features, price, roomType, imgUrl, buttonName, onClick  }) => {
+const Card = ({ features, price, roomType, imgUrl, buttonName, onClick }) => {
+  //Ternary stateement to manage star rating and boookmark
+  const [isRated, setIsRated] = useState(false); //bookmark is jnot filled by default
+  const [rating, setRating] = useState(null); //star is jnot filled by default
+
+  const handleRating = () => {
+    // alternate between
+    setIsRated(!isRated);
+  };
+
+  const Stars = (index) => {
+    // star rating comtents
+    const starValue = index + 1;
+
+    return (
+      <>
+        <button
+          className="unbutton"
+          title={starValue}
+          onClick={() => setRating(console.log("Star value is:" + starValue))}
+        >
+          <span className="star">&#9733;</span>
+        </button>
+      </>
+    );
+  };
+
   return (
     <>
       <div className="room-card light-bg">
         <div className="card-img">
           <img src={imgUrl} alt={roomType} className="image" />
         </div>
+
         <div className="card-info">
+          <button className=" cta unbutton bookmark" onClick={handleRating}>
+            {!isRated ? (
+              <img src="./bookmark.png" alt="unmarked" className="icon-m" />
+            ) : (
+              <img
+                src="./bookmark-fill.png"
+                alt="bookmarked"
+                className="icon-m"
+              />
+            )}
+          </button>
           <p className="card-footer title">{price}</p>
           <h2 className="title">{roomType}</h2>
 
@@ -20,23 +58,19 @@ const Card = ({ features, price, roomType, imgUrl, buttonName, onClick  }) => {
           </div>
 
           <br />
-          <button className="btn cta">
-            {buttonName}
-          </button>
-          <br />
-          <br />
+
           <div className="icon-area">
-            <img src="./dribbble.png" alt="Room 1" className="icon-s" />
-            <img src="./dribbble.png" alt="Room 1" className="icon-s" />
-            <img src="./dribbble.png" alt="Room 1" className="icon-s" />
-            <img src="./dribbble.png" alt="Room 1" className="icon-s" />
-            <img src="./dribbble.png" alt="Room 1" className="icon-s" />
+            <button className="btn cta">{buttonName}</button>
+          </div>
+          <div className="icon-area icon-m">
+            {/* Ratings components | display an array of stars (5) */}
+
+            {[...Array(5)].map(Stars)}
           </div>
         </div>
-        <br />
       </div>
     </>
   );
-}
+};
 
 export default Card;
