@@ -8,16 +8,33 @@ import Facilities from "./Facilities";
 function Home() {
   return (
     <>
-      <LandingPage/>
-      
-      <div className="center">
-        <h1 className="title-2">OUR FACILITIES</h1>
-        <p className="wrap-m">
-        Step into a world of elegance and relaxation as you enter our meticulously designed rooms and suites. Immerse yourself in the vibrant colors and soothing textures inspired by the Caribbean's natural beauty. Each accommodation is thoughtfully appointed with modern comforts, ensuring a serene and comfortable stay for every guest.
-        </p>
+      <LandingPage
+        source={"../header-vid.mp4"}
+        title={"AQUATONE PALACE "}
+        subTitle={"Welcome to"}
+        caption={"Your Ultimate Caribbean Summer Escape"}
+        type={"video/mp4"}
+      />
+
+      <div className="card-info">
+        <div className="center wrap-m">
+          <br />
+          <br />
+          <h1 className="title-2">OUR FACILITIES</h1>
+          <p className="">
+            Step into a world of elegance and relaxation as you enter our
+            meticulously designed rooms and suites. Immerse yourself in the
+            vibrant colors and soothing textures inspired by the Caribbean's
+            natural beauty. Each accommodation is thoughtfully appointed with
+            modern comforts, ensuring a serene and comfortable stay for every
+            guest.
+          </p>
+          <br />
+          <br />
+        </div>
       </div>
-      <Facilities/>
-      
+
+      <Facilities />
     </>
   );
 }

@@ -41,9 +41,11 @@
 
 .title-bar {
   position: absolute;
-  display: block;
   width: 400px;
   height: 12%;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  
  
 }
 

@@ -1,5 +1,6 @@
 .corousel {
- width: 100vw;
+ width: 100%;
+ height: auto;
 }
 
 .hero {
@@ -15,7 +16,7 @@
 
 .center {
     text-align: center;
-    top: 16%;
+    top: 30%;
 }
 
 .bottom {
@@ -27,4 +28,8 @@
   
   margin-top: 200px;
   position: relative;
+}
+
+.text-shadow {
+  text-shadow: -1px -1px 8px #00000040;
 }

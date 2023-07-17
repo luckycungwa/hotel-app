@@ -6,20 +6,20 @@ import "./css/nav.css";
 function Navbar() {
   return (
     <>
-      <div className="nav">
+      <div className="nav right">
       
           <ul className="icon-area">
             <li>
-              <NavLink to="/Home">Home</NavLink>
+              <NavLink className="navItem" to="/Home">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/Rooms">Rooms</NavLink>
+              <NavLink className="navItem" to="/Rooms">Rooms</NavLink>
             </li>
             <li>
-              <NavLink to="/Login">Sign in</NavLink>
+              <NavLink className="navItem" to="/Login">Sign in</NavLink>
             </li>
             <li>
-              <NavLink to="/">Contact</NavLink>
+              <NavLink className="navItem" to="/">Contact</NavLink>
             </li>
           </ul>
       </div>

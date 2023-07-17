@@ -6,7 +6,7 @@ function SuccessPage() {
   return (
     <>
       <div className="hero">
-        <div className=""></div>
+        <div className="overlay-right"></div>
         <div className="hero-text center">
           <h2 className="title-2 white  anim-text">H O O O R A Y! </h2>
           <p className="title-display white  anim-text">CONGRADULATION </p>

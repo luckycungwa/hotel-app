@@ -2,6 +2,7 @@ import React from "react";
 import "./css/card.css";
 import Card from "./Card";
 import { useHistory } from "react-router-dom";
+import LandingPage from "./LandingPage";
 
 const Rooms = () => {
   const navPage = useHistory();
@@ -21,6 +22,14 @@ const Rooms = () => {
 
   return (
     <>
+    {/* HERO/ COROUSEL SECTION */}
+    <LandingPage
+        source={"../rooms-bg.jpg"}
+        title={"AQUATONE PALACE "}
+        subTitle={"Welcome to"}
+        caption={"Your Ultimate Caribbean Summer Escape"}
+        type={"image/jpeg"}
+      />
       <div className="card-section">
         <Card
           features="Ocean view | king-sized bed | private balcony..."

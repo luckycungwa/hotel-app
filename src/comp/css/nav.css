@@ -1,26 +1,54 @@
 .nav {
-    flex-direction: row;
-    display:inline-flex;
-    font-weight: bold;
-    font-size: 14px;
-   background-color: #f0f8ff00;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 24px;
-    align-items: center;
-    margin: 0px;
-  z-index: 999;
-  
-  }
-
-.transparent {
-    
-    display: none;
+  flex-direction: row;
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #f0f8ff00;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 24px;
+  align-items: center;
+  margin: 4px 32px;
+  position: absolute;
+  position: fixed;
 }
 
-.center-div {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+.nav ul {
+  gap: 24px;
+  text-decoration: none;
+}
+
+.transparent {
+  display: none;
+}
+
+* NVIGATION BAR STUFF */ 
+NavLink:visited {
+    margin: 12px 0 0 0;
+
+    color: #2e2e2e;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.navItem {
+  margin: 12px 0 0 0;
+
+  color: #2e2e2e;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px;
+}
+
+.navItem:hover {
+  margin: 12px 0 0 0;
+  padding: 12px;
+  color: #efefef;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #2e2e2e;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
