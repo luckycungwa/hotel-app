@@ -12,6 +12,7 @@ const Rooms = () => {
 
   const handleBooking = () => {
     console.log("Booking reserved");
+    navPage.push("/Reservation");
   };
 
   return (

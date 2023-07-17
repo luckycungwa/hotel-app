@@ -3,7 +3,15 @@ import "./css/card.css";
 import "../App.css";
 // Imports for ratings
 
-const Card = ({ features, price, roomType, imgUrl, buttonName, onClick, reviewCount }) => {
+const Card = ({
+  features,
+  price,
+  roomType,
+  imgUrl,
+  buttonName,
+  onClick,
+  reviewCount,
+}) => {
   //Ternary stateement to manage star rating and boookmark
   const [isRated, setIsRated] = useState(false); //bookmark is jnot filled by default
   const [rating, setRating] = useState(null); //star is jnot filled by default
@@ -33,7 +41,7 @@ const Card = ({ features, price, roomType, imgUrl, buttonName, onClick, reviewCo
   return (
     <>
       <div className="room-card light-bg">
-        <div className="card-img ">
+        <div className="card-img">
           <img src={imgUrl} alt={roomType} className="image left" />
         </div>
 
@@ -49,7 +57,7 @@ const Card = ({ features, price, roomType, imgUrl, buttonName, onClick, reviewCo
               />
             )}
           </button>
-          
+
           <h2 className="title">{roomType}</h2>
 
           <br />
@@ -59,21 +67,21 @@ const Card = ({ features, price, roomType, imgUrl, buttonName, onClick, reviewCo
 
           <br />
 
+          {/* call to action button */}
           <div className="icon-area">
-            <button className="btn cta">{buttonName}</button>
+            <button className="btn cta" onClick={onClick}>{buttonName}</button>
           </div>
-          <br/>
+          <br />
           <div className="icon-area">
             {/* Ratings components | display an array of stars (5) */}
             {[...Array(5)].map(Stars)}
-            
           </div>
-          <br/>
+          <br />
           <p className="card-footer title">{reviewCount}</p>
           <div className="price-tag">
-          <p className=" price-text"> {price}</p> per single night</div>
+            <p className=" price-text"> {price}</p> per single night
+          </div>
         </div>
-        
       </div>
     </>
   );
