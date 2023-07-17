@@ -1,39 +1,39 @@
 /* CARD CLASSES */
 .room-card {
   position: relative;
-  /* width: 800px;
-  height: 300px; */
-  display: flex;
+  width: 60%;
+  height: 40%;
+  display: inline-flex;
   padding: 12px;
-  
-  
 }
 
 .card:hover {
-    box-shadow: #00000030 0 6px 12px;
-    transform: translateY(-0.5px);
+  box-shadow: #00000030 0 6px 12px;
+  transform: translateY(-0.5px);
 }
 
 .card-info {
-  width: 100%;
+  width: 60%;
   height: auto;
-  display:flex;
-  text-align: center;
+  display: flex;
+  text-align: left;
   justify-content: center;
   align-items: center;
   align-content: center;
   position: relative;
   flex-direction: column;
-
+  padding: 12px 24px;
+  
 
   /* position: absolute; */
 }
 
-.card-img {
-  object-fit: cover;
+/* .card-img {
   position: relative;
   text-align: center;
-}
+  object-fit: fill;
+  width: auto;
+} */
 
 .card-footer {
   font-size: 0.65em;
@@ -46,7 +46,6 @@
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid #efefef13;
-  
 }
 
 .description-list {
@@ -54,6 +53,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 4px 4px;
+  line-height: 2rem;
 }
 
 .bookmark {
@@ -63,19 +63,38 @@
   top: 0;
   width: 60px;
   height: auto;
+  gap: 16px;
 }
 
 .star {
   color: #00000040;
-  font-size: 42px;
+  font-size: 36px;
+  transition: all ease-in-out .2s;
 }
 .star-filled {
   color: #00000040;
-  font-size: 42px;
   color: #ffdb4a;
 }
-.star:hover, star-filled:hover {
+.star:hover,
+star-filled:hover {
   color: #00000040;
-  font-size: 42px;
   color: #ffdb4a;
+  transform: translateY(-0.5px);
+}
+
+.price-tag {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 2%;
+  
+}
+
+.price-text {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 0;
 }

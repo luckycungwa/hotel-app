@@ -1,29 +1,27 @@
 import React from "react";
 // vieo handlie for reference of ending event
-import { useRef } from "react";
+// import { useRef } from "react";
 import "./css/landingPage.css";
 
 function LandingPage({title,subTitle, caption, source, type}) {
   // video playback content
-  const videoRef = useRef(null);
+  // const videoRef = useRef(null);
 
-  const handleVideoEnded = () => {
-    videoRef.current.currentTime = videoRef.current.duration;
-    videoRef.current.playbackRate = -1;
-    videoRef.current.autoPlay();
-  };
+  // //play in reverse attempt did not work
+  // const handleVideoEnded = () => {
+  //   videoRef.current.currentTime = videoRef.current.duration;
+  //   videoRef.current.playbackRate = -1;
+  //   videoRef.current.autoPlay();
+  
+  //onEnded={handleVideoEnded}
+  // };
 
   return (
     <>
       <div className="hero">
-        {/* <img
-          src="./bg02.jpg"
-          alt="corousel"
-          className="corousel"
-        /> */}
-
+        
         {/* use video now */}
-        <video className="corousel" loop autoPlay muted onEnded={handleVideoEnded}>
+        <video className="corousel" loop autoPlay muted >
           <source src={source} type={type} alt="corousel" />
         </video>
 

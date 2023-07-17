@@ -16,12 +16,12 @@ function Home() {
         type={"video/mp4"}
       />
 
-      <div className="card-info">
-        <div className="center wrap-m">
+      <div className="card-section center">
+        <div className="wrap-l">
           <br />
           <br />
-          <h1 className="title-2">OUR FACILITIES</h1>
-          <p className="">
+          <h1 className="title-3">OUR FACILITIES</h1>
+          <p className="description">
             Step into a world of elegance and relaxation as you enter our
             meticulously designed rooms and suites. Immerse yourself in the
             vibrant colors and soothing textures inspired by the Caribbean's

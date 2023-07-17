@@ -56,11 +56,11 @@ body {
 }
 
 .image {
-  width: 400px;
-  height: 300px;
-  display: block;
+  width: 500px;
+  height: 400px;
   position: relative;
   text-align: center;
+  object-fit: cover;
 }
 
 /* Image overlay */
@@ -88,7 +88,7 @@ body {
 
 .glass  {
   background: #ffffff50;
-  box-shadow: 0 4px 30px #0000001a;
+  box-shadow: 0 4px 24px #0000001a;
   backdrop-filter: blur(4.2px);
   -webkit-backdrop-filter: blur(4.2px);
   border: 1px solid #ffffff4d;
@@ -98,6 +98,7 @@ body {
   float: left;
   left: 0;
 }
+
 .right {
   float: right;
   right: 0;
@@ -265,7 +266,6 @@ p {
 /* BUTTONS */
 .btn {
   appearance: none;
-  background-color: transparent;
   border: 2px solid #1a1a1a;
   box-sizing: border-box;
   cursor: pointer;
@@ -288,6 +288,10 @@ p {
   min-width: auto;
   max-width: auto;
   will-change: transform;
+}
+
+.invert {
+  filter: invert(1);
 }
 
 .btn:disabled {
@@ -319,7 +323,6 @@ p {
   width: 20px;
   height: 20px;
   transition: all 0.3s;
-  margin: auto;
 }
 
 .icon-m {
@@ -328,7 +331,6 @@ p {
   width: 40px;
   height: 40px;
   transition: all 0.3s;
-  margin: auto;
 }
 
 .icon-s:hover {

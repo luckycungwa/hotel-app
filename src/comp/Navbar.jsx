@@ -6,7 +6,7 @@ import "./css/nav.css";
 function Navbar() {
   return (
     <>
-      <div className="nav right">
+      <div className="nav glass right">
       
           <ul className="icon-area">
             <li>

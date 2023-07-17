@@ -10,8 +10,8 @@
   padding: 24px;
   align-items: center;
   margin: 4px 32px;
-  position: absolute;
-  position: fixed;
+  position:fixed;
+  z-index: 99;
 }
 
 .nav ul {
@@ -27,7 +27,7 @@
 NavLink:visited {
     margin: 12px 0 0 0;
 
-    color: #2e2e2e;
+    color: #ede4d7;
     font-weight: bold;
     text-decoration: none;
     padding: 12px;
@@ -36,19 +36,21 @@ NavLink:visited {
 .navItem {
   margin: 12px 0 0 0;
 
-  color: #2e2e2e;
+  color: #101010;
   font-weight: bold;
   text-decoration: none;
   padding: 12px;
 }
 
 .navItem:hover {
-  margin: 12px 0 0 0;
-  padding: 12px;
-  color: #efefef;
+  /* margin: 12px 0 0 0; */
+  border-bottom: 4px solid #ede4d7;
+  
+  padding-bottom: 6px;
+  color: #ede4d7;
   font-weight: bold;
   text-decoration: none;
-  background-color: #2e2e2e;
+  /* background-color: #2e2e2e; */
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
