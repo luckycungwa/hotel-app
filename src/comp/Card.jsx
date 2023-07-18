@@ -46,7 +46,7 @@ const Card = ({
         </div>
 
         <div className="card-info">
-          <button className=" cta unbutton bookmark" onClick={handleRating}>
+          <button className="cta unbutton bookmark" onClick={handleRating}>
             {!isRated ? (
               <img src="./bookmark.png" alt="unmarked" className="anim-icon" />
             ) : (
@@ -69,7 +69,9 @@ const Card = ({
 
           {/* call to action button */}
           <div className="icon-area">
-            <button className="btn cta" onClick={onClick}>{buttonName}</button>
+            <button className="btn cta" onClick={onClick}>
+              {buttonName}
+            </button>
           </div>
           <br />
           <div className="icon-area">
@@ -79,7 +81,7 @@ const Card = ({
           <br />
           <p className="card-footer title">{reviewCount}</p>
           <div className="price-tag">
-            <p className=" price-text"> {price}</p> per single night
+            <p className=" price-text">{price}</p> per single night
           </div>
         </div>
       </div>

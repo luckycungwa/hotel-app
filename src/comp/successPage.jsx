@@ -14,15 +14,16 @@ function SuccessPage() {
           <br />
           <br />
           <div className=" anim-icon">
+            
+         
+          <NavLink to="/Home" className=" anim-icon">
             <img
               src="./approve.png"
               alt="corousel"
               className="img-card anim-icon"
             />
-          </div>
-          <NavLink to="/" className=" anim-icon">
-            
           </NavLink>
+           </div>
         </div>
       </div>
     </>

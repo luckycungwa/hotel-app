@@ -104,6 +104,27 @@ body {
   right: 0;
 }
 
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.absolute {
+  display: flex;
+  position: absolute;
+}
+.relative {
+  display: flex;
+  position: relative;
+}
+
+.counter-container {
+padding: 0px 12px;
+}
+
 /* TEXT DECO */
 .description {
   font-size: 0.875rem;
