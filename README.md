@@ -1,3 +1,8 @@
+# Screenshort ref
+
+![Screenshot (7)](https://github.com/luckycungwa/hotel-app/assets/36919645/166415ef-f7b3-412c-a28c-6f642ad4e379)
+![Screenshot (9)](https://github.com/luckycungwa/hotel-app/assets/36919645/40507295-4a29-4331-b85b-1ba7e1391c14)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
